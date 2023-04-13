@@ -1,12 +1,15 @@
 .box {
     background-color: lightgreen;
-    min-height: 200px;
     margin-bottom: 10px;
 }
 .box .box__inner {
     background-color: khaki;
     max-width: 1140px;
     margin-inline: auto;
+
+}
+
+.header {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
@@ -21,19 +24,27 @@
     margin: 10px 10px 10px 0;
     align-self: center;
 }
-.logo .logo__img {}
+
+.logo .logo__img {
+}
 
 .menu {
+    background-color: lightskyblue;
+}
+
+.menu .menu__item {
+    padding: 20px;
+    display: inline-block;
+}
+
+.main {
     background-color: lawngreen;
     display: flex;
 }
-.main{
-    background-color: lawngreen;
-    display: flex;
-    flex-wrap: wrap;
-}
-.article{
+
+.article {
     padding: 10px;
+    column-count: 3;
 }
 .related{
     padding: 10px;
@@ -49,7 +60,6 @@
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    /*align-content: space-around;*/
 }
 .item {
     width: 100px;
@@ -64,9 +74,4 @@
 }
 .copyright{
     align-self: flex-end;
-}
-
-.menu .menu__item{
-    padding: 20px;
-    display: inline-block;
 }
